@@ -9,9 +9,12 @@ var colors = [
    "rgb(0, 204, 153)"
 ];
 
-var winColor = colors[3];
+var correctColor = colors[3];
 var squares = document.querySelectorAll(".square");
-document.getElementById("winColorDisplay").textContent = winColor;
+var correctColorDisplay = document.getElementById("correct-color-display");
+var messageDisplay
+
+correctColorDisplay.textContent = correctColor;
 
 for (var i = 0; i < squares.length; i++) {
    // Set initial colors to squares
@@ -22,9 +25,9 @@ for (var i = 0; i < squares.length; i++) {
       // Get color from click square
       var guessedColor = this.style.backgroundColor;
       console.log(guessedColor);
-      console.log(winColor);
-      // Compare to the correct color (winColor)
-      if (guessedColor.replace(/\s/g, '') === winColor.replace(/\s/g, '')) //(Deleting whitespaces with regex)
+      console.log(correctColor);
+      // Compare to the correct color (correctColor)
+      if (guessedColor.replace(/\s/g, '') === correctColor.replace(/\s/g, '')) //(Deleting whitespaces with regex)
          alert("Congrats you won!");
 
       else {
@@ -36,4 +39,4 @@ this.style.background = "#232323";
 
 
 
-console.log(typeof (winColor));
+console.log(typeof (correctColor));
