@@ -12,10 +12,13 @@ body {
 	float: left;
 	margin: 1.66%;
 	border-radius: 15%;
+	transition: background 0.8s;
+	-webkit-transition: background 0.8s;
+	-moz-transition: background 0.8s;
 }
 
 #container {
-	margin: 0px auto;
+	margin: 20px auto;
 	max-width: 42.86rem;
 }
 
@@ -33,14 +36,41 @@ h1 {
 #menu-stripe {
 	background-color: white;
 	text-align: center;
-	height: 2.143rem 0;
+	height: 30px;
 	color: black;
 }
 
 .selected-mode {
-background: blue;
+	color: white;
+	background: steelblue;
 }
 
 #correct-color-display {
 	font-size: 200%;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	font-size: inherit;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	outline: none;
+}
+
+button:hover {
+	color: white;
+	background: steelblue;
+	cursor: pointer;
+	
+}
+
+#message {
+	display: inline-block;
+	width: 15%;
 }
