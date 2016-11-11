@@ -1,5 +1,7 @@
 body {
    background-color: #232323;
+	font-size: 14px; 
+	font-size: 1rem;  /* =14px */
 }
 
 .square {
@@ -13,9 +15,20 @@ body {
 
 #container {
 	margin: 0px auto;
-	max-width: 600px;
+	max-width: 42.86rem;
 }
 
 h1 {
    color: white;
+}
+
+#menu-stripe {
+	background-color: white;
+	text-align: center;
+	height: 30px;
+	color: black;
+}
+
+.selected-mode {
+background: blue;
 }
